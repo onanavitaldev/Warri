@@ -206,41 +206,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const tl = gsap.timeline({ defaults: { ease: "power4.out", duration: 1.2 }});
 
     tl.from(".navbar", { y: -50, opacity: 0 })
-      .from(".hero-description", { x: 50, opacity: 0 }, "-=1")
-      .from(".btn-contact", { scale: 0.8, opacity: 0 }, "-=1")
       .from(".floating-card", { y: 30, opacity: 0, duration: 1.5, ease: "elastic.out(1, 0.5)" }, "-=0.5");
 
     // 2. ANIMATIONS AU SCROLL (REVEAL)
     const reveals = document.querySelectorAll('.reveal');
-    
-    // reveals.forEach((el) => {
-    //     gsap.from(el, {
-    //         scrollTrigger: {
-    //             trigger: el,
-    //             start: "top 85%",
-    //             toggleActions: "play none none reverse"
-    //         },
-    //         y: 60,
-    //         opacity: 0,
-    //         duration: 1,
-    //         ease: "power3.out"
-    //     });
-    // });
 
-    // 3. ANIMATION DES BARS DE GRAPHIQUE
-    // gsap.from(".bar-anim", {
-    //     scrollTrigger: {
-    //         trigger: ".bar-anim",
-    //         start: "top 80%",
-    //     },
-    //     scaleY: 0,
-    //     transformOrigin: "bottom",
-    //     stagger: 0.1,
-    //     duration: 1.5,
-    //     ease: "expo.out"
-    // });
-
-    // 4. EFFET DE FLOTTAISON (CONTINU)
+    // 3. EFFET DE FLOTTAISON (CONTINU)
     gsap.to(".floating-element, .floating-card", {
         y: 15,
         duration: 2,
@@ -249,7 +220,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ease: "sine.inOut"
     });
 
-    // 5. TEXTE INFINI DANS LE FOOTER (SCROLL HORIZONTAL)
+    // 4. TEXTE INFINI DANS LE FOOTER (SCROLL HORIZONTAL)
     gsap.to(".warri-scroll-text", {
         xPercent: -20,
         scrollTrigger: {
@@ -260,7 +231,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 6. ANIMATION DES ICONS SYNC
+    // 5. ANIMATION DES ICONS SYNC
     gsap.to(".floating-icon", {
         rotate: 360,
         duration: 20,
@@ -269,3 +240,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
