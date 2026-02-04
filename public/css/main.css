@@ -10,7 +10,7 @@ body {
     color: white;
 }
 
-.hero-title {
+.hero-title_ {
     visibility: hidden;
 }
 /* Puis, dans GSAP, on utilise gsap.set() ou on laisse GSAP gérer l'autoAlpha */
@@ -119,7 +119,7 @@ body {
     }
 }
 
-.hero-title {
+.hero-title_ {
     font-size: 2.8rem;
     line-height: 1.1;
     font-weight: 700;
@@ -340,4 +340,5 @@ body {
 /* Effet de focus sur l'input */
 input::placeholder {
     color: #444;
+
 }
