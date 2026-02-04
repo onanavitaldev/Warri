@@ -91,7 +91,7 @@ gsap.to(".floating-icon", {
 });
 
 // Apparition des cartes
-gsap.from(".feature-card", {
+/*gsap.from(".feature-card", {
     scrollTrigger: {
         trigger: ".grid",
         start: "top 80%",
@@ -101,7 +101,7 @@ gsap.from(".feature-card", {
     duration: 1,
     stagger: 0.3,
     ease: "power4.out"
-});
+});*/
 
 // Animation des logos partenaires (entrée en cascade)
 gsap.from(".grayscale img", {
@@ -240,4 +240,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
 
