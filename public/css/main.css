@@ -10,9 +10,6 @@ body {
     color: white;
 }
 
-.hero-title_ {
-    visibility: hidden;
-}
 /* Puis, dans GSAP, on utilise gsap.set() ou on laisse GSAP gérer l'autoAlpha */
 
 .hero-container {
@@ -120,7 +117,6 @@ body {
 }
 
 .hero-title_ {
-    font-size: 2.8rem;
     line-height: 1.1;
     font-weight: 700;
     margin-bottom: 30px;
@@ -128,7 +124,7 @@ body {
 
 @media (min-width: 768px) { 
     .hero-title { 
-        font-size: 4.5rem; 
+        line-height:1.1;
     } 
 }
 
@@ -342,3 +338,4 @@ input::placeholder {
     color: #444;
 
 }
+
