@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warri - Finance Intelligente</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="public/css/main.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+    <div id="app">
+        <!-- Heroes section -->
+        <main class="hero-container">
+            <img src="https://images.pexels.com/photos/5483246/pexels-photo-5483246.jpeg" alt="Warri Background" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+            <div class="hero-glow"></div>
+
+            <nav class="navbar">
+                <div class="logo text-2xl">Warri</div>
+                <div class="nav-links">
+                    <a href="#">Features</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Testimonials</a>
+                </div>
+                <button class="btn-account">
+                    <span class="dot"></span> Account
+                </button>
+            </nav>
+
+            <div class="hero-content">
+                <div class="hero-left">
+                    <h1 class="hero-title">
+                        Manage your <br> 
+                        <span class="text-white">finance</span> <span class="text-italic">smarter,</span> <br> 
+                        live better
+                    </h1>
+
+                    <div class="floating-card">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User" class="avatar">
+                        <div class="card-info">
+                            <span class="label">Education Plan</span>
+                            <p class="amount">$700.00 / $8,000.00 <span class="percent">80%</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-right">
+                    <p class="hero-description">
+                        Optimize your financial well-being with our intuitive platform. Simple and secure.
+                    </p>
+                    <button class="btn-contact flex">
+                        <svg class="icon-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        Contact
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <!-- About -->
+        <section class="stats-section">
+            <div class="stats-header">
+                <h2 class="text-3xl sm:text-5xl stats-main-title">Warri's platform helps users <br> make smarter financial choices</h2>
+                <p class="stats-subtitle">Built for people who want clarity, control, and confidence.</p>
+            </div>
+            <div class="bento-grid">
+                <div class="bento-item stats-card reveal">
+                    <h3 class="card-title">Warri stats</h3>
+                    <p class="card-text">Relied upon by more than 100K users globally, with 98% satisfaction rate.</p>
+                    <button class="btn-about">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                        About Us
+                    </button>
+                    
+                    <div class="stats-numbers">
+                        <div class="stat-group">
+                            <span class="stat-value">100K</span>
+                            <span class="stat-label">Global users</span>
+                        </div>
+                        <div class="stat-group">
+                            <span class="stat-value">98%</span>
+                            <span class="stat-label">Satisfaction rate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bento-item image-card reveal">
+                    <img src="https://images.pexels.com/photos/5231321/pexels-photo-5231321.jpeg" alt="Budgeting">
+                    <div class="budget-overlay-card">
+                        <div class="budget-info">
+                            <span class="budget-price">$4200/mo</span>
+                            <span class="budget-tag">Set your budget goal</span>
+                        </div>
+                        <div class="budget-arrow">→</div>
+                    </div>
+                </div>
+
+                <div class="bento-item testimonial-card reveal">
+                    <div class="brand-header">
+                        <div class="brand-logo">N</div>
+                        <span class="brand-name">Netdot</span>
+                    </div>
+                    <p class="quote">"Warri helps me monitor everything in real time. It feels like having a financial expert beside me 24/7."</p>
+                    <div class="user-info">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Jane Smith" class="user-avatar">
+                        <div>
+                            <p class="user-name">Jane Smith</p>
+                            <p class="user-role">Manager, Netdot</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Features -->
+        <section id="features" class="max-w-7xl mx-auto px-6 py-24" style="background-image: url('https://images.pexels.com/photos/8788809/pexels-photo-8788809.jpeg');background-size:cover;background-attachment:fixed;border-radius:35px;">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl text-black font-bold mb-4 tracking-tight">A suite of tools to help you take<br class="hidden md:block">charge of your financial future</h2>
+                <p class="text-gray-700">Our platform provides personalized insights and flexible financial tools.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                
+                <div class="feature-card group relative bg-[#1a1c1b] border border-white/10 rounded-[40px] p-10 overflow-hidden">
+                    <div class="relative z-10">
+                        <h3 class="text-3xl font-bold mb-4">Intelligent budgeting</h3>
+                        <p class="text-gray-400 mb-8 max-w-xs">Establish and monitor budgets that adjust to your spending behavior. Our AI examines your financial trends.</p>
+                        <button class="flex items-center gap-2 bg-white text-black px-5 py-2.5 rounded-full font-bold text-sm hover:bg-green-500 transition-colors">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                            Try Now
+                        </button>
+                    </div>
+                    
+                    <div class="mt-12 relative h-64 w-full bg-[#242625] rounded-3xl border border-white/5 p-6 overflow-hidden">
+                        <div class="flex justify-between items-end h-full gap-2">
+                            <div class="bg-green-500/20 w-full rounded-t-lg bar-anim" style="height: 40%"></div>
+                            <div class="bg-green-500/40 w-full rounded-t-lg bar-anim" style="height: 70%"></div>
+                            <div class="bg-green-500 w-full rounded-t-lg bar-anim" style="height: 50%"></div>
+                            <div class="bg-green-500/60 w-full rounded-t-lg bar-anim" style="height: 90%"></div>
+                            <div class="bg-green-500/30 w-full rounded-t-lg bar-anim" style="height: 60%"></div>
+                        </div>
+                        <div class="absolute top-8 left-8 bg-white/10 backdrop-blur-md p-4 rounded-2xl border border-white/10 shadow-2xl floating-element">
+                            <p class="text-[10px] text-gray-400 uppercase">Overview</p>
+                            <p class="text-xl font-bold">$3,200.20</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card relative bg-[#1a1c1b] border border-white/10 rounded-[40px] p-10 overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-3xl font-bold mb-4">Seamless multi-account<br>financial management</h3>
+                        <ul class="space-y-3 text-gray-400">
+                            <li class="flex items-center gap-3">
+                                <span class="text-green-500">✓</span> Instant sync across all accounts
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="text-green-500">✓</span> Unified dashboard for total oversight
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="text-green-500">✓</span> Customizable reports for deep insights
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="relative h-64 mt-8">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-16 h-16 bg-green-500 rounded-2xl flex items-center justify-center shadow-[0_0_50px_rgba(34,197,94,0.3)] z-20">
+                                <span class="text-black font-black text-2xl">W</span>
+                            </div>
+                            <div class="absolute w-48 h-48 border border-white/5 rounded-full animate-spin-slow"></div>
+                            
+                            <div class="absolute top-0 left-1/4 bg-white p-2 rounded-lg shadow-xl -rotate-12 floating-icon">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" class="w-6 h-6">
+                            </div>
+                            <div class="absolute bottom-10 right-1/4 bg-white p-2 rounded-lg shadow-xl rotate-12 floating-icon">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" class="w-6 h-6">
+                            </div>
+                            <div class="absolute top-1/2 -right-4 bg-white p-2 rounded-lg shadow-xl floating-icon">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Slack_icon_2019.svg" class="w-6 h-6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Pricing -->
+        <section id="pricing" class="bg-white text-black py-24 px-6 md:px-10 rounded-[40px] max-w-7xl mx-auto my-20">
+            <div class="flex flex-col lg:flex-row justify-between items-start gap-12">
+                
+                <div class="lg:w-1/3">
+                    <h2 class="text-3xl sm:text-5xl font-bold leading-tight mb-8 tracking-tighter">
+                        Choose the plan<br>that fits your needs
+                    </h2>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-center gap-3 font-medium">
+                            <span class="text-green-600 text-xl">✓</span> Flexible plans for every need
+                        </li>
+                        <li class="flex items-center gap-3 font-medium">
+                            <span class="text-green-600 text-xl">✓</span> Comprehensive Features Included
+                        </li>
+                        <li class="flex items-center gap-3 font-medium">
+                            <span class="text-green-600 text-xl">✓</span> Risk-free trial
+                        </li>
+                    </ul>
+                    <button class="bg-[#22c55e] text-white px-8 py-3 rounded-full font-bold flex items-center gap-3 hover:bg-black transition-all group">
+                        Compare Plan 
+                        <svg class="group-hover:translate-x-1 transition-transform" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </button>
+                </div>
+
+                <div class="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+                    
+                    <div class="pricing-card relative bg-[#f4f4f4] p-8 rounded-[32px] border border-transparent hover:border-black/10 transition-all cursor-default overflow-hidden">
+                        <span class="absolute top-6 right-6 bg-black text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Starter</span>
+                        <div class="mb-12">
+                            <div class="flex items-baseline gap-1">
+                                <span class="text-4xl font-black">$9</span>
+                                <span class="text-gray-500 text-sm">/Monthly</span>
+                            </div>
+                            <p class="text-gray-500 mt-2 text-sm italic">Ideal for individuals</p>
+                        </div>
+                        <ul class="space-y-4 mb-10 text-sm font-semibold">
+                            <li class="flex items-start gap-2">● Full access to financial tracking and budgeting tools</li>
+                            <li class="flex items-start gap-2">● Designed for growing businesses</li>
+                            <li class="flex items-start gap-2">● Up to 5 users</li>
+                        </ul>
+                        <button class="w-full py-4 bg-white border border-black/5 rounded-full font-bold hover:bg-black hover:text-white transition-colors">Get Started</button>
+                    </div>
+
+                    <div class="pricing-card relative bg-[#f4f4f4] p-8 rounded-[32px] border border-transparent hover:border-black/10 transition-all cursor-default overflow-hidden">
+                        <span class="absolute top-6 right-6 bg-[#f4a261] text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Professional</span>
+                        <div class="mb-12">
+                            <div class="flex items-baseline gap-1">
+                                <span class="text-4xl font-black">$19</span>
+                                <span class="text-gray-500 text-sm">/Monthly</span>
+                            </div>
+                            <p class="text-gray-500 mt-2 text-sm italic">For large team</p>
+                        </div>
+                        <ul class="space-y-4 mb-10 text-sm font-semibold">
+                            <li class="flex items-start gap-2">● Designed for growing businesses</li>
+                            <li class="flex items-start gap-2">● Advanced analytics and insights</li>
+                            <li class="flex items-start gap-2">● Unlimited users and integrations</li>
+                        </ul>
+                        <br>
+                        <button class="w-full py-4 text-white bg-black border border-black/5 rounded-full font-bold hover:bg-white hover:text-black transition-colors">Get Started</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="max-w-7xl mx-auto px-6 py-24 border-t border-white/5">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-12 items-center opacity-30 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-700">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" class="h-6" alt="Google">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" class="h-6" alt="PayPal">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg" class="h-6" alt="LinkedIn">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg" class="h-8" alt="Nike">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/H%26M-Logo.svg" class="h-6" alt="HM">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png" class="h-4" alt="Tesla">
+                </div>
+
+                <div class="testimonial-box">
+                    <div class="flex gap-1 mb-6 text-green-500">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                    </div>
+                    <p class="text-gray-500 text-2xl md:text-3xl font-bold tracking-tight leading-[1.2] mb-10">
+                        "Warri has completely transformed how I track my investments. The interface is so intuitive that I actually enjoy checking my balance."
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden bg-zinc-800">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <p class="font-bold text-black text-3xl">Alex Rivers</p>
+                            <p class="text-1xl text-gray-500 uppercase tracking-widest font-semibold">Senior Product Designer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer-wrap bg-[#050505] text-white pt-32 pb-10 px-6 overflow-hidden">
+            <div class="max-w-7xl mx-auto relative">
+                
+                <div class="big-logo-wrap absolute -top-20 left-0 w-full pointer-events-none opacity-[0.03] select-none">
+                    <h2 class="text-[25vw] font-black leading-none tracking-tighter uppercase whitespace-nowrap warri-scroll-text">
+                        Warri Warri Warri
+                    </h2>
+                </div>
+
+                <div class="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+                    <div class="lg:col-span-2">
+                        <h3 class="text-4xl font-bold tracking-tight mb-6">Ready to elevate your <br><span class="text-green-500">financial game?</span></h3>
+                        <div class="flex max-w-sm border-b border-white/20 pb-2 focus-within:border-green-500 transition-colors">
+                            <input type="email" placeholder="Your email address" class="bg-transparent border-none outline-none flex-1 text-sm py-2">
+                            <button class="text-xs font-bold uppercase tracking-widest hover:text-green-500 transition">Join Now</button>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-4">
+                        <p class="text-[10px] font-bold uppercase tracking-widest text-zinc-600">Explore</p>
+                        <ul class="footer-links space-y-2">
+                            <li><a href="#" class="text-lg hover:translate-x-2 inline-block transition-transform">Features</a></li>
+                            <li><a href="#" class="text-lg hover:translate-x-2 inline-block transition-transform">Security</a></li>
+                            <li><a href="#" class="text-lg hover:translate-x-2 inline-block transition-transform">Pricing</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="flex flex-col gap-4">
+                        <p class="text-[10px] font-bold uppercase tracking-widest text-zinc-600">Connect</p>
+                        <div class="flex gap-4">
+                            <a href="#" class="social-circle w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white hover:text-black transition-all">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter-icon lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+                            </a>
+                            <a href="#" class="social-circle w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white hover:text-black transition-all">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram-icon lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                            </a>
+                            <a href="#" class="social-circle w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white hover:text-black transition-all">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin-icon lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row justify-between items-center pt-10 border-t border-white/5 gap-6">
+                    <div class="text-[10px] font-bold uppercase tracking-widest text-zinc-600 italic">Built for the next generation</div>
+                    <div class="flex gap-8 text-[10px] font-bold uppercase tracking-widest text-zinc-600">
+                        <span>©2026 WARRI</span>
+                        <a href="#" class="hover:text-white">PRIVACY</a>
+                        <a href="#" class="hover:text-white">TERMS</a>
+                        <span class="text-gray-500">Designed by <a href="https://webbyteagency.github.io/w" target="_blank" class="text-white">WebByte Agency</a></span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
