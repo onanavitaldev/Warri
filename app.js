@@ -206,7 +206,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const tl = gsap.timeline({ defaults: { ease: "power4.out", duration: 1.2 }});
 
     tl.from(".navbar", { y: -50, opacity: 0 })
-      .from(".hero-title", { y: 100, opacity: 0, stagger: 0.2 }, "-=0.8")
       .from(".hero-description", { x: 50, opacity: 0 }, "-=1")
       .from(".btn-contact", { scale: 0.8, opacity: 0 }, "-=1")
       .from(".floating-card", { y: 30, opacity: 0, duration: 1.5, ease: "elastic.out(1, 0.5)" }, "-=0.5");
@@ -268,4 +267,5 @@ document.addEventListener('DOMContentLoaded', () => {
         repeat: -1,
         ease: "none"
     });
+
 });
