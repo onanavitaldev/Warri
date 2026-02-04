@@ -1,4 +1,4 @@
-# 💸 Warri — Smart Finance Landing Page
+# Warri — Smart Finance Landing Page
 
 **Warri** is a high-conversion, modern **FinTech Landing Page** designed to showcase a seamless financial management experience. This project blends a minimalist aesthetic with cutting-edge animations to transform complex banking concepts into an engaging user journey.
 
